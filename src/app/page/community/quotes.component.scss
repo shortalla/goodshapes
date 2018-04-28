@@ -1,0 +1,27 @@
+@import '~sass/styles.scss';
+
+.quotes {
+	text-align: center;
+    background-image: url('/assets/images/community-shape-left.png'),
+    				  url('/assets/images/community-shape-right.png');
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+	background-size: contain;
+
+	h2 {
+		&::before {
+			content: open-quote;
+			color: $theme-accent;
+			font-size: $large-font-size-lg;
+			display: block;
+			margin-bottom: $large-font-size-xs * -1;
+		}
+		&::after {
+			content: close-quote;
+		}
+	}
+
+	small {
+		font-weight: $font-weight-lightest;
+	}
+}

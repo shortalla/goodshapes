@@ -1,0 +1,42 @@
+@import '~sass/styles.scss';
+@import './button.component.scss';
+
+button {
+	outline: none;
+	font-size: 0.8rem;
+	padding: $button-padding-vertical;
+	background-color: $theme-secondary;
+	color: $theme-background;
+	font-weight: $font-weight-boldest;
+	border: none;
+	transform: translateX($button-transform)
+			   translateY($button-transform);
+	transition: transform 0.2s linear;
+}
+
+.bar-top,
+.bar-center,
+.bar-bottom {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: $theme-background;
+    margin: 0.35em 0;
+    transition: 0.4s;
+}
+
+:hover {
+	.bar-top,
+	.bar-center,
+	.bar-bottom {
+		background-color: $theme-accent;
+	}
+	.bar-top {
+	    transform: rotate(-45deg) translate(-0.35rem, 0.2rem) ;
+	}
+	.bar-center {
+	    opacity: 0;
+	}
+	.bar-bottom {
+	    transform: rotate(45deg) translate(-0.4rem, -0.4rem) ;
+	}
+}

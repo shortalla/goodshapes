@@ -1,0 +1,40 @@
+@import '~sass/styles.scss';
+
+$button-margin: 0.3em;
+$button-transform: $button-margin * -1;
+$button-padding-vertical: 0.8em;
+$button-padding-horizontal: 1.6em;
+$button-font-size: 0.8em;
+$button-min-width: 11em;
+
+.button-border {
+	border: 1px solid $theme-secondary;
+	margin: $button-margin 0 0 $button-margin;
+	display: inline-block;
+	transition: transform 0.3s linear;
+	transform: translateX(0) translateY(0);
+
+	&:hover {
+		border-color: $theme-accent;
+		transform: translateX($button-transform / 2)
+				   translateY($button-transform / 2);
+		button {
+			color: $theme-accent;
+			transform: translateX(0) translateY(0);
+		}
+	}
+}
+
+button.text-button {
+	outline: none;
+	font-size: 0.8rem;
+	padding: $button-padding-vertical $button-padding-horizontal;
+	background-color: $theme-secondary;
+	color: $theme-background;
+	font-weight: $font-weight-boldest;
+	border: none;
+	min-width: $button-min-width;
+	transform: translateX($button-transform)
+			   translateY($button-transform);
+	transition: transform 0.2s linear;
+}

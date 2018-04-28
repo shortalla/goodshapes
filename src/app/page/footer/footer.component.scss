@@ -1,0 +1,48 @@
+@import '~sass/styles.scss';
+
+footer {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+
+	li {
+		padding: 1em;
+	}
+
+	a {
+		color: $theme-foreground;
+		text-decoration: none;
+
+		&:hover {
+			color: $theme-secondary-light;
+		}
+	}
+}
+
+@media (max-width: $layout-breakpoint-xs) {
+	ul {
+		text-align: center;
+		li {
+			display: inline-block;
+			padding: 0;
+			
+			&:not(:last-of-type)::after {
+				content: '•';
+				margin: 1em;
+			}
+		}
+	}
+}
+
+.highlight {
+	display: inline-block;
+	position: relative;
+	background: url('/assets/images/highlight-shape.png');
+	background-size: cover;
+}
+
+img {
+	margin: 0.5em;
+}

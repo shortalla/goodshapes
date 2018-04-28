@@ -1,0 +1,60 @@
+@import '~sass/styles.scss';
+
+.video-bg {
+	width: 100%;
+	text-align: center;
+	background-image: url('/assets/images/video-shape-left.png'), url('/assets/images/video-shapes.png');
+	background-size: contain, contain;
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right bottom;
+	overflow: hidden;
+	position: relative;
+	min-height: 15rem;
+
+	.video-image {
+		z-index: -1;
+		background-image: linear-gradient(rgba($theme-primary, 0.6), rgba($theme-primary, 0.6)),
+						  url('/assets/images/video-image.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center top;
+		transition: all 0.6s linear;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	&:hover .video-image {
+		background-image: linear-gradient(rgba($theme-primary-light, 0.6), rgba($theme-primary-light, 0.6)),
+						  url('/assets/images/video-image.png');
+		transform: scale(1.1)
+	}
+
+	h1 {
+		&::before {
+			content: open-quote;
+		}
+		&::after {
+			content: close-quote;
+		}
+	}
+
+	.video-content {
+		padding: 1em;
+	}
+}
+
+@media (min-width: $layout-breakpoint-xs) {
+	.video-bg {
+		min-height: 20em;
+	}
+}
+
+
+@media (min-width: $layout-breakpoint-sm) {
+	.video-bg {
+		min-height: 40em;
+	}
+}

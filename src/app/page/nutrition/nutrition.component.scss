@@ -1,0 +1,31 @@
+@import '~sass/styles.scss';
+
+.nutrition-bg {
+	background: url('/assets/images/nutrition-shape-left.png'),
+				url('/assets/images/nutrition-right.png');
+	background-size: contain, contain;
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, bottom right;
+}
+
+
+.nutrition-points {
+	background: url('/assets/images/nutrition-left.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+
+@media (max-width: $layout-breakpoint-xs - 1) {
+	.text-image-container {
+		order: 1;
+		width: 60%;
+		margin: auto;
+	}
+
+	img {
+		max-width: 100%;
+		min-width: 100%;
+	}
+}

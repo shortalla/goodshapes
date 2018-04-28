@@ -1,0 +1,95 @@
+html, body {
+	font-family: 'Circular STD';
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $font-weight-bold;
+}
+
+section {
+	padding: 1.5em;
+}
+
+footer {
+	padding: 0 1.5em;
+}
+
+h1 {
+	font-size: $large-font-size-sm;
+}
+
+h5 {
+	font-size: $font-size-lg;
+}
+
+h6 {
+	font-size: $font-size-sm;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+
+
+
+@media (max-width: $layout-breakpoint-xs - 1) {
+	section {
+		border-bottom: 1px solid $theme-secondary-light;
+	}
+
+	h2,
+	p {
+		text-align: center;
+	}
+}
+
+
+
+
+@media (min-width: $layout-breakpoint-xs) {
+	h1 {
+		font-size: $large-font-size-xs;
+	}
+}
+
+
+
+
+@media (min-width: $layout-breakpoint-sm) {
+	section {
+		padding: 3em 6em;
+	}
+
+	footer {
+		padding: 0 6em;
+	}
+
+	h1 {
+		font-size: $large-font-size-md;
+	}
+}
+
+
+
+
+@media (min-width: $layout-breakpoint-md) {
+	h1 {
+		font-size: $large-font-size-lg;
+	}
+
+	h2 {
+		font-size: $large-font-size-md;
+	}
+
+	h3 {
+		font-size: $large-font-size-sm;
+	}
+
+	h4 {
+		font-size: $font-size-xxxl;
+	}
+
+	p {
+		font-size: $font-size-xl;
+	}
+}

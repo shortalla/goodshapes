@@ -1,0 +1,34 @@
+@import '~sass/styles.scss';
+
+.workout-bg {
+    background-image: url('/assets/images/workout-shape-left.png'),
+    				  url('/assets/images/workout-shape-right.png');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+	background-size: contain;
+}
+
+.workout-image {
+	background-image: url('/assets/images/workout-go-girl.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.workout-image {
+	min-width: 30%;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+
+
+@media (max-width: $layout-breakpoint-xs) {
+	.workout-image {
+		order: 2;
+		width: 30%;
+		margin: auto;
+	}
+}

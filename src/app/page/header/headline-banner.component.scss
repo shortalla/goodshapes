@@ -1,0 +1,39 @@
+@import '~sass/styles.scss';
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+@media (max-width: $layout-breakpoint-xs) {
+	.headline-wrapper {
+		padding-top: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+}
+
+@media (min-width: $layout-breakpoint-xs - 1) {
+	.headline-wrapper {
+		padding-right: 45%;
+		position: relative;
+	}
+
+	.headline-container {
+		max-width: 36rem;
+		padding-bottom: 6rem;
+	}
+
+	.headline-image {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -5%;
+		left: 55%;
+
+		img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+}
