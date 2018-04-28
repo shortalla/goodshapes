@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'gs-video',
@@ -6,13 +6,4 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./video.component.scss']
 })
 
-export class GsVideoComponent implements OnInit {
-
-  componentName: 'GsVideoComponent'	
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class GsVideoComponent { }

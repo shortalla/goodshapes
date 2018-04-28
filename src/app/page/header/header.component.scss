@@ -3,49 +3,104 @@
 header {
 	background-color: $theme-primary;
 	padding-top: 1em;
+}
+.header-bg {
+    background-image: url('/assets/images/gs-green-shape.png'),
+    				  url('/assets/images/gs-triangle.png');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+	background-size: contain, contain;
+}
 
-	.header-bg {
-	    background-image: url('/assets/images/gs-green-shape.png'),
-	    				  url('/assets/images/gs-triangle.png');
-	    background-position: left top, right bottom;
-	    background-repeat: no-repeat, no-repeat;
-		background-size: contain, contain;
-	}
-	
-	nav {
-		text-align: center;
-		padding: 1.5em;
+nav {
+	text-align: center;
+	padding: 1.5em;
 
-		ul li {
-			list-style: none;
-			margin: 0 0.4em;
-			padding: 0.25em 0;
-			border-bottom: 2px solid transparent;
-			font-size: $font-size-sm;
+	ul li {
+		list-style: none;
+		margin: 0 0.4em;
+		padding: 0.25em 0;
+		border-bottom: 2px solid transparent;
+		font-size: $font-size-sm;
 
-			&.is-selected,
-			&:hover {
-				border-bottom-color: $theme-secondary;
-			}
+		&.is-selected,
+		&:hover {
+			border-bottom-color: $theme-secondary;
 		}
-	}
-
-	a {
-		color: $theme-background;
-		text-decoration: none;
-	}
-
-	img {
-		max-width: 100%;
-		max-height: 100%;
 	}
 }
 
+a {
+	color: $theme-background;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.nav-content {
+	position: relative;
+}
+
+.usps-wrapper {
+	background-color: $theme-primary-light;
+}
+
+
 
 @media (max-width: $layout-breakpoint-xs - 1) {
-	nav ul {
-		display: none;
-	}
+	nav {
+		ul {
+			margin: 0;
+			padding: 0;
+		    width: 0;
+		    height: 100%;
+		    position: fixed;
+		    z-index: 1;
+		    top: 0;
+		    right: 0;
+		    background-color: $theme-background;
+		    overflow-x: hidden;
+		    transition: 0.5s;
+		    padding-top: 6rem;
+
+		    li {
+		    	border: none;
+		    	background-image: url('/assets/images/text-box.png');
+		    	background-size: contain;
+		    	background-position: center center;
+		    	background-repeat: no-repeat;
+		    	min-height: 3em;
+		    	transition: all $transition-time linear;
+
+		    	a {
+			    	color: $theme-secondary;
+			    	font-size: $font-size-lg;
+		    	}
+
+		    	&:hover {
+		    		transform: scale(1.1);
+		    	} 
+		    }
+		}
+
+		.is-open {
+			ul {
+			    border-left: 3px solid $theme-secondary;
+				width: 60vw;
+			}
+		}
+
+		gs-menu-button {
+		    transition: 0.5s;
+			position: absolute;
+			z-index: 3;
+			top: 1em;
+			right: 1em;
+		} 	
+	}	
 }
 
 @media (min-width: $layout-breakpoint-xs) {

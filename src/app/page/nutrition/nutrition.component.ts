@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListItemModel } from '../../model/list/list-item';
 import { NUTRITION_LIST } from '../../data/lists';
 
 @Component({
@@ -8,5 +9,5 @@ import { NUTRITION_LIST } from '../../data/lists';
 })
 
 export class GsNutritionComponent {
-	nutrition = NUTRITION_LIST;
+	private nutritionList: ListItemModel[] = NUTRITION_LIST;
 }

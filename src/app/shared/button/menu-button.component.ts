@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NavService } from '../services/nav.service';
 
 @Component({
 	selector: 'gs-menu-button',
@@ -6,4 +7,19 @@ import { Component } from '@angular/core';
 	styleUrls: ['./menu-button.component.scss']
 })
 
-export class GsMenuButtonComponent { }
+/**
+ *	A component for displayed a menu button
+ *  or a close button, given a parameter
+ */
+export class GsMenuButtonComponent {
+
+	constructor(private navService: NavService) { }
+
+	/**
+	 *  Whether the button should display the
+	 *  close icon. 
+	 */
+	public isCloseShown(): boolean {
+		return this.navService.isMobileNavOpen;
+	}
+}

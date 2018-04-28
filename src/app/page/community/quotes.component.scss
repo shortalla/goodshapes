@@ -1,6 +1,6 @@
 @import '~sass/styles.scss';
 
-.quotes {
+.quotes-content {
 	text-align: center;
     background-image: url('/assets/images/community-shape-left.png'),
     				  url('/assets/images/community-shape-right.png');
@@ -23,5 +23,10 @@
 
 	small {
 		font-weight: $font-weight-lightest;
+	}
+
+	.quote-wrapper {
+		max-width: 80%;
+		margin: auto;
 	}
 }

@@ -4,5 +4,14 @@
 	.item-icon,
 	.item-text {
 		padding: 0.5em;
+		text-align: left;
+	}
+
+	.item-icon {
+		min-width: 3rem;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
 	}
 }

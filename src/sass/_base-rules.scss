@@ -7,14 +7,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: $font-weight-bold;
 }
 
-section {
-	padding: 1.5em;
-}
-
-footer {
-	padding: 0 1.5em;
-}
-
 h1 {
 	font-size: $large-font-size-sm;
 }
@@ -33,10 +25,6 @@ h6 {
 
 
 @media (max-width: $layout-breakpoint-xs - 1) {
-	section {
-		border-bottom: 1px solid $theme-secondary-light;
-	}
-
 	h2,
 	p {
 		text-align: center;
@@ -56,14 +44,6 @@ h6 {
 
 
 @media (min-width: $layout-breakpoint-sm) {
-	section {
-		padding: 3em 6em;
-	}
-
-	footer {
-		padding: 0 6em;
-	}
-
 	h1 {
 		font-size: $large-font-size-md;
 	}

@@ -7,7 +7,15 @@
 	<gs-community id="community"></gs-community>
 	<gs-guide id="guide"></gs-guide>
 	<gs-footer id="footer"></gs-footer>
-	<div class="scroller"
-		*ngIf="isScrollToTopShown()"
-		(click)="scrollToTop()">back to top</div>
+	<go-top-button
+		[animate]="true"
+		[speed]="50"
+		[acceleration]="2"
+		[scrollDistance]="300"
+		[styles]="backToTopStyle">
+		<div class="layout-column layout-align-center-center">
+			<img src="assets/icons/backtotop-arrow.png" />
+			Back to top
+		</div>
+	</go-top-button>
 </div>

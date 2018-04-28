@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ListItemModel } from '../../model/list/list-item';
+import { GUIDE_LIST } from '../../data/lists';
 
 @Component({
   selector: 'gs-guide',
@@ -6,4 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./guide.component.scss']
 })
 
-export class GsGuideComponent { }
+export class GsGuideComponent { 
+	private guideList: ListItemModel[] = GUIDE_LIST;
+}

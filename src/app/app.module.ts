@@ -1,4 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { GoTopButtonModule } from 'ng2-go-top-button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgStickyDirective } from 'ng-sticky';
 
 // Page
 import { GsHeaderModule } from './page/header/header.module';
@@ -8,8 +11,6 @@ import { GsCommunityModule } from './page/community/community.module';
 import { GsGuideModule } from './page/guide/guide.module';
 import { GsFooterModule } from './page/footer/footer.module';
 
-import { ScrollService } from './shared/scroll/scroll.service';
-
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -18,10 +19,9 @@ import { AppComponent } from './app.component';
 @NgModule({
     declarations: [
         AppComponent,
+        NgStickyDirective,
     ],
-    providers: [
-        ScrollService,
-    ],
+    providers: [],
     bootstrap: [
         AppComponent
     ],
@@ -36,6 +36,11 @@ import { AppComponent } from './app.component';
         GsCommunityModule,
         GsGuideModule,
         GsFooterModule,
+        GoTopButtonModule,
+        BrowserAnimationsModule,
+    ],
+    exports: [
+        GoTopButtonModule,
     ],
 })
 

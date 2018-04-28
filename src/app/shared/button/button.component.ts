@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'gs-button',
@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
 	styleUrls: ['./button.component.scss']
 })
 
-export class GsButtonComponent { }
+/**
+ * A component for displaying a regular text
+ * button which can be styled optionally
+ */
+export class GsButtonComponent {
+	// Whether the button is white
+	@Input() styleWhite: boolean;
+}

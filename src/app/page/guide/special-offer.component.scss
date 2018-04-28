@@ -1,0 +1,72 @@
+@import '~sass/styles.scss';
+
+.special-offer-content {
+	background-image: url('/assets/images/orange-shape.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding: 0 2rem;
+}
+
+.offer-box {
+	max-width: 80%;
+	text-align: center;
+	padding: 2.5em;
+	background-image: url('/assets/images/guide-price-shape.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	h1 {
+		white-space: nowrap;
+		transform: translateX(0.5rem) translateY(-1.2rem);
+	}
+}
+
+.old-price {
+	font-size: $font-size-sm;
+	font-weight: $font-weight-boldest;
+	display: inline-block;
+	position: relative;
+
+	.crossed-out {
+		background-image: url('/assets/images/scribbled-out-shape.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.new-price {
+	font-size: $font-size-xxxl;
+	font-weight: $font-weight-boldest;
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+.price-per-week {
+	font-size: $font-size-xxs;
+}
+
+.image-container {
+	max-width: 40%;
+	margin: auto;
+}
+
+
+@media (max-width: $layout-breakpoint-xs - 1) {
+	.offer-box {
+		padding: 1.5em;
+	}
+	.image-container {
+		max-width: 100%;
+		background-image: url('/assets/images/orange-shape.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+}

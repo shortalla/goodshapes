@@ -18,7 +18,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center top;
-		transition: all 0.6s linear;
+		transition: all $transition-time linear;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -43,6 +43,12 @@
 
 	.video-content {
 		padding: 1em;
+	}
+
+	.image-container {
+		height: 1.2em;
+		width: 1.2em;
+		margin: 0 0.3em;
 	}
 }
 

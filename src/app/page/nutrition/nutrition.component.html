@@ -1,24 +1,26 @@
-<section class="nutrition-bg">
-    <h2 class="color-secondary">It's not a diet.</h2>
-    <h2>It's a way of life.</h2>
-    <p>
-    	The goodshapes nutrition guide helps you to establish a healthy (and sustainable) lifestyle to achieve you fitness goals!
-    </p>
-</section>
-<section class="nutrition-points">
-	<div class="layout-column layout-gt-xs-row">
-		<div class="text-image-container">
+<section>
+	<div class="gs-content-padding gs-text-max-width">
+		<gs-section-heading>	
+			<div lightText>It's not a diet.</div>
+			<div darkText>It's a way of life.</div>	
+		</gs-section-heading>
+
+	    <p>
+	    	The goodshapes nutrition guide helps you to establish a healthy (and sustainable) lifestyle to achieve you fitness goals!
+	    </p>
+	</div>
+
+	<div class="gs-content-padding layout-column layout-gt-xs-row">
+		<div class="image-container">
 			<img src="assets/images/nutrition-text.png" />
 		</div>
-		<div class="bullets">
-			<gs-list-item
-				*ngFor="let item of nutrition" 
-				[item]="item"></gs-list-item>
-		</div>
-		<div class="layout-xs-row  layout-align-xs-end-end">
-			<gs-button>Order Now</gs-button>
+
+		<div class="layout-column">
+			<gs-list [list]="nutritionList"></gs-list>
+			<div class="gs-content-padding-vertical layout-xs-row  layout-align-xs-end-end">
+				<gs-button>Order Now</gs-button>
+			</div>
 		</div>
 	</div>
 </section>
-
 <gs-video></gs-video>

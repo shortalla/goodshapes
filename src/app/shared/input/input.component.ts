@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
 	selector: 'gs-input',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
 	styleUrls: ['./input.component.scss']
 })
 
-export class GsInputComponent { }
+export class GsInputComponent { 
+	private email: string;
+}

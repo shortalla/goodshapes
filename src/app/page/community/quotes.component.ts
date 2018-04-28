@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { QUOTES_LIST } from '../../data/lists';
+import { QuoteModel } from '../../model/quote/quote';
 
 @Component({
 	selector: 'gs-quotes',
@@ -11,5 +12,5 @@ import { QUOTES_LIST } from '../../data/lists';
 * Outputs the list of quotes on the landing page.
 */
 export class GsQuotesComponent {
-	quotes = QUOTES_LIST;
+	private quotesList: QuoteModel[] = QUOTES_LIST;
 }

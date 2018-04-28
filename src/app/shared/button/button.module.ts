@@ -1,4 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NavService } from '../services/nav.service';
 
 import { GsButtonComponent } from './button.component';
 import { GsMenuButtonComponent } from './menu-button.component';
@@ -9,14 +11,19 @@ import { GsMenuButtonComponent } from './menu-button.component';
         GsButtonComponent,
         GsMenuButtonComponent,
     ],
-    providers: [],
+    providers: [
+        NavService
+    ],
     bootstrap: [
     	GsButtonComponent,
         GsMenuButtonComponent,
     ],
     schemas: [
-        CUSTOM_ELEMENTS_SCHEMA
+        CUSTOM_ELEMENTS_SCHEMA,
     ],
+    imports: [
+        CommonModule,
+    ],  
     exports: [
     	GsButtonComponent,
         GsMenuButtonComponent,

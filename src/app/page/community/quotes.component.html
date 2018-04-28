@@ -1,10 +1,15 @@
-<section class="quotes">
-	<div class="quote-wrapper" *ngFor="let item of quotes">
+<div class="quotes-content">
+	<div
+		class="quote-wrapper"
+		*ngFor="let item of quotesList">
+
 		<div class="quote-container">
 		   <h2>{{ item.quote }}</h2>
 		</div>
+
 		<div class="source">
 			<small>{{ item.source }}</small>
 		</div>
+
 	</div>
-</section>
+</div>

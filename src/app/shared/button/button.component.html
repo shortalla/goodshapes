@@ -1,5 +1,5 @@
-<div class="button-border">
+<div class="button-border" [ngClass]="{'style-white': styleWhite }">
 	<button class="text-button">
-		<ng-content></ng-content>
+		<ng-content class="layout-row"></ng-content>
 	</button>
 </div>

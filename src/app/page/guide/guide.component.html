@@ -1,29 +1,29 @@
-<section class="good-guide">
+<section class="guide-content gs-content-padding">
+
     <h6>One Good Guide</h6>
     <div class="layout-row layout-align-start-center">
-		<div class="text-box">
+		<div class="header-box">
 			<h1>One Great You</h1>
 		</div>
 	</div>
-    <p>
-		Good Shapes is more than a diet. It's more than a lifestyle.
-		It's a commitment to finding your fiercest, most self-loving
-		and most body-positive you. Join women from around the world
-		in achieving your personal body and fitness goals with our guide
-		- no matter what shape or size.
-    </p>
 
-	<div class="image-container">
-		<img src="assets/images/program-ipad.png" />
-	</div>
+	<div class="layout-gt-xs-row layout-xs-column layout-align-xs-center-center">
+		<div class="flex layout-column">
+		    <p>
+				Good Shapes is more than a diet. It's more than a lifestyle.
+				It's a commitment to finding your fiercest, most self-loving
+				and most body-positive you. Join women from around the world
+				in achieving your personal body and fitness goals with our guide
+				- no matter what shape or size.
+		    </p>
+		    <gs-list
+		    	class="gs-content-padding-vertical"
+		    	[list]="guideList"></gs-list>
+		</div>
 
-	<div class="price-box-bg">
-		<div class="price-box">
-			<h5>Full 15 week program</h5>
-			<div class="old-price">49€</div>
-			<div class="new-price">39€</div>
-			<div class="price-per-week">only 2,80€ per week!</div>
-			<gs-button>Order now</gs-button>
+		<div class="flex image-container">
+			<img src="assets/images/program-ipad.png" />
 		</div>
 	</div>
+	<gs-special-offer></gs-special-offer>
 </section>

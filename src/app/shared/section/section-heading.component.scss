@@ -1,0 +1,12 @@
+@import '~sass/styles.scss';
+
+.section-heading {
+
+	h2:first-child {
+		color: $theme-secondary-light;
+	}
+
+	h2:last-child {
+		color: $theme-foreground;
+	} 
+}

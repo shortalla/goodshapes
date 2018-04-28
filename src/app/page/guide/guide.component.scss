@@ -1,14 +1,10 @@
 @import '~sass/styles.scss';
 
-.good-guide {
+.guide-content {
 	background-color: $theme-primary-light;
 }
 
-h6 {
-	margin: 0 3rem;
-}
-
-.text-box {
+.header-box {
 	padding: 2.5em;
 	background-image: url('/assets/images/text-box.png');
 	background-size: contain;
@@ -20,54 +16,31 @@ h6 {
 	}
 }
 
-.price-box {
-	padding: 2.5em;
-	background-image: url('/assets/images/guide-price-shape.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-
-	h1 {
-		white-space: nowrap;
-		transform: translateX(0.5rem) translateY(-1.2rem);
-	}
+h6 {
+	margin: 0 3rem;
 }
 
-.price-box-bg {
-	background-image: url('/assets/images/guide-orange-shape.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	padding: 0 2rem;
-} 
-
-img {
-	max-height: 100%;
-	max-width: 100%;
-}
 
 @media (max-width: $layout-breakpoint-xs - 1) {
 	.image-container {
 		max-width: 40%;
 	}
 
-	.text-box {
-		h1 {
-			transform: translateX(0.5rem) translateY(-1.8rem);
-			font-size: $font-size-xxl;
-		}
+	.header-box h1 {
+		transform: translateX(0.5rem) translateY(-1.8rem);
+		font-size: $font-size-xxl;
 	}
 }
 
+
 @media (max-width: 299px) {
-	.text-box {
+	.header-box {
 		padding: 0;
 		background: none;
+
 		h1 {
 			white-space: initial;
 			transform: none;
 		}
-	}
-	h6 {
-		margin: 0;
 	}
 }

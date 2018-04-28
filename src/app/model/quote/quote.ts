@@ -1,17 +1,9 @@
 
 /**
- * Model for a quote on the landing page .
+ * Model for a quote by a Goodshapes customer
  */
 export class QuoteModel {
     public quote: string;
     public source: string;
     public imageUrl: string;
-
-    constructor(quote: string,
-    			source: string,
-    			imageUrl: string) {
-        this.quote = quote;
-        this.source = source;
-        this.imageUrl = imageUrl;
-    }
 }

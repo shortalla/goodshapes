@@ -1,23 +1,29 @@
-<section>
-    <h2 class="color-secondary">Get fit? Get Lean?</h2>
-    <h2>No Problem!</h2>
-</section>
-<section class="workout-bg">
+<section class="workout-content gs-content-padding">
+
+	<div class="gs-text-max-width gs-content-padding">
+	    <gs-section-heading>	
+			<div lightText>Get fit? Get Lean?</div>
+			<div darkText>No Problem!</div>	
+		</gs-section-heading>
+	</div>
+
 	<div class="layout-column layout-gt-xs-row">
-		<div class="workout-image layout-column">
+
+		<div class="image-container workout-image layout-column">
 			<img src="assets/images/workout-image.png" />
 		</div>
+
 		<div class="layout-column">
 			<p>
 				Our personalised workouts with step-by-step instructions will
 				get you in shape in no time...well actually in 14 weeks.
 				<img src="assets/icons/gs-emoticon.png" />
 			</p>
-			<gs-list-item
-				*ngFor="let item of workout"
-				[item]="item"></gs-list-item>
+			<gs-list [list]="workoutList"></gs-list>
 		</div>
+
 	</div>
+
 </section>
 
 <gs-photo-divider></gs-photo-divider>

@@ -1,4 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { GsInputComponent } from './input.component';
 
@@ -11,7 +12,12 @@ import { GsInputComponent } from './input.component';
     bootstrap: [
     	GsInputComponent,
     ],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ],
+    imports: [
+        CommonModule
+    ],
     exports: [
     	GsInputComponent,
     ]

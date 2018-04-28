@@ -8,6 +8,10 @@
 	background-position: top left, bottom right;
 }
 
+.gs-text-max-width {
+	margin: auto;
+}
+
 
 .nutrition-points {
 	background: url('/assets/images/nutrition-left.png');
@@ -16,16 +20,22 @@
 	background-position: bottom left;
 }
 
+.image-container {
+	max-width: 30%;
+	margin-right: 3em;
+}
+
+img {
+	max-width: 100%;
+	height-height: 100%;
+}
+
 
 @media (max-width: $layout-breakpoint-xs - 1) {
-	.text-image-container {
+	.image-container {
 		order: 1;
-		width: 60%;
-		margin: auto;
-	}
-
-	img {
-		max-width: 100%;
-		min-width: 100%;
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

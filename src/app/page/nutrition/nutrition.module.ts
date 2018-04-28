@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { GsNutritionComponent } from './nutrition.component';
 import { GsVideoComponent } from './video.component';
 
+import { GsSectionModule } from '../../shared/section/section.module';
 import { GsButtonModule } from '../../shared/button/button.module';
 import { GsListModule } from '../../shared/list/list.module';
 
@@ -23,6 +24,7 @@ import { GsListModule } from '../../shared/list/list.module';
     ],
     imports: [
         CommonModule,
+        GsSectionModule,
         GsButtonModule,
         GsListModule,
     ],

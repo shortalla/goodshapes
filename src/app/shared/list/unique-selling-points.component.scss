@@ -1,0 +1,25 @@
+@import '~sass/styles.scss';
+
+.usps-wrapper {
+	text-align: center;
+	padding: 1.5em 0.8em;
+	margin: 0;
+
+	text-align: center;
+	.image-container {
+		height: 3em;
+		min-width: 3em;
+	}
+}
+
+
+@media (max-width: $layout-breakpoint-xs - 1) {
+	.usps-wrapper {
+		padding: 0.5em;
+
+		li.usp {
+			margin: 0.2em;
+			padding: 0.1em 0.5em;
+		}
+	}
+}

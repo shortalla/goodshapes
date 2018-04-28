@@ -1,16 +1,27 @@
 <section class="community-bg">
-	<div>
-	    <h2 class="color-secondary">Don't do it alone.</h2>
-	    <h2>Join our community!</h2>
+
+	<div class="gs-content-padding gs-text-max-width">
+		
+		<gs-section-heading>
+			<div lightText>Don't do it alone.</div>
+			<div darkText>Join our community!</div>
+		</gs-section-heading>
+
 	    <p>
 		    Find support and be motivated by thousands of women
 		    around the world on your fitness journey.
 	    </p>
+
 	</div>
 
-	<div class="collage">
+	<div class="image-container gs-content-padding">
 		<img src="assets/images/community-collage.png" />
 	</div>
+
 </section>
 
-<gs-quotes></gs-quotes>
+<section class="gs-content-padding-vertical">
+	<gs-unique-selling-points [list]="communityList"></gs-unique-selling-points>
+</section>
+
+<gs-quotes class="gs-content-padding"></gs-quotes>

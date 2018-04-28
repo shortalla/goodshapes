@@ -30,6 +30,9 @@ button {
 	.bar-bottom {
 		background-color: $theme-accent;
 	}
+}
+
+.is-close-shown {
 	.bar-top {
 	    transform: rotate(-45deg) translate(-0.35rem, 0.2rem) ;
 	}

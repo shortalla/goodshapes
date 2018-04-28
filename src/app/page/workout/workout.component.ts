@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListItemModel } from '../../model/list/list-item';
 import { WORKOUT_LIST } from '../../data/lists';
 
 @Component({
@@ -8,5 +9,5 @@ import { WORKOUT_LIST } from '../../data/lists';
 })
 
 export class GsWorkoutComponent {
-	workout = WORKOUT_LIST;
+	private workoutList: ListItemModel[] = WORKOUT_LIST;
 }

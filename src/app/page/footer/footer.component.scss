@@ -21,6 +21,22 @@ ul {
 	}
 }
 
+.highlight {
+	display: inline-block;
+	position: relative;
+	background: url('/assets/images/highlight-shape.png');
+	background-size: cover;
+}
+
+.image-container {
+	margin: 0.5rem;
+}
+
+img {
+	margin: 0.5em;
+}
+
+
 @media (max-width: $layout-breakpoint-xs) {
 	ul {
 		text-align: center;
@@ -34,15 +50,9 @@ ul {
 			}
 		}
 	}
-}
 
-.highlight {
-	display: inline-block;
-	position: relative;
-	background: url('/assets/images/highlight-shape.png');
-	background-size: cover;
-}
-
-img {
-	margin: 0.5em;
+	.copyright {
+		order: 2;
+		margin-bottom: 1rem;
+	}
 }

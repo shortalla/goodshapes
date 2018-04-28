@@ -11,7 +11,7 @@ $button-min-width: 11em;
 	border: 1px solid $theme-secondary;
 	margin: $button-margin 0 0 $button-margin;
 	display: inline-block;
-	transition: transform 0.3s linear;
+	transition: transform $transition-time linear;
 	transform: translateX(0) translateY(0);
 
 	&:hover {
@@ -22,6 +22,20 @@ $button-min-width: 11em;
 			color: $theme-accent;
 			transform: translateX(0) translateY(0);
 		}
+	}
+
+	&.style-white {
+		border-color: $theme-background;
+
+		button.text-button {
+			color: $theme-foreground;
+			background-color: $theme-background;
+		}
+	}
+
+	img {
+		max-height: 1.2rem;
+		max-width: 1.2rem;
 	}
 }
 

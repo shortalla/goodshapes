@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { GsCommunityComponent } from './community.component';
 import { GsQuotesComponent } from './quotes.component';
 
+import { GsListModule } from '../../shared/list/list.module';
+import { GsSectionModule } from '../../shared/section/section.module';
+
 
 @NgModule({
     declarations: [
@@ -20,6 +23,8 @@ import { GsQuotesComponent } from './quotes.component';
     ],
     imports: [
         CommonModule,
+        GsListModule,
+        GsSectionModule,
     ],
     exports: [
         GsCommunityComponent
