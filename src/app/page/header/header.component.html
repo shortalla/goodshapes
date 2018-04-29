@@ -3,36 +3,38 @@
 
 <header>
     <div class="header-bg">
-        <nav ng-sticky [offSet]="0" [addClass]="'is-sticky'" 
-            class="layout-row layout-align-xs-space-between-center">
-            <div class="logo-container">
-                <img alt="goodshapes logo" src="assets/images/gs-logo-white.png" />
-            </div>
-            <div [ngClass]="{'is-open':isMenuOpen()}"
-                class="layout-xs layout-gt-xs-row">
+        <nav ng-sticky [offSet]="0" [addClass]="'is-sticky'">
+            <div class="gs-max-width layout-row layout-align-xs-space-between-center">
+                <div class="logo-container">
+                    <img alt="goodshapes logo" src="assets/images/gs-logo-white.png" />
+                </div>
+                <div [ngClass]="{'is-open':isMenuOpen()}"
+                    class="layout-xs layout-gt-xs-row">
 
-                <gs-menu-button
-                    class="mobile-nav-button"
-                    (click)="toggleMenu()"></gs-menu-button>
+                    <gs-menu-button
+                        class="mobile-nav-button"
+                        (click)="toggleMenu()"></gs-menu-button>
 
-                <ul class="layout-gt-xs-row layout-align-gt-xs-center-center" id="nav">
-                    <li>
-                        <a href="#workout" (click)="closeMenu()">Workout</a>
-                    </li>
-                    <li>
-                        <a href="#nutrition" (click)="closeMenu()">Nutrition</a>
-                    </li>
-                    <li>
-                        <a href="#community" (click)="closeMenu()">Community</a>
-                    </li>
-                    <li>
-                        <a href="#guide" (click)="closeMenu()">Good Guide</a>
-                    </li>
-                </ul>
-
+                    <ul class="layout-gt-xs-row layout-align-gt-xs-center-center" id="nav">
+                        <li>
+                            <a href="#workout" (click)="closeMenu()">Workout</a>
+                        </li>
+                        <li>
+                            <a href="#nutrition" (click)="closeMenu()">Nutrition</a>
+                        </li>
+                        <li>
+                            <a href="#community" (click)="closeMenu()">Community</a>
+                        </li>
+                        <li>
+                            <a href="#guide" (click)="closeMenu()">Good Guide</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <gs-headline-banner></gs-headline-banner>
+        <div class="gs-max-width layout-column">
+            <gs-headline-banner></gs-headline-banner>
+        </div>
     </div>
 </header>
 
