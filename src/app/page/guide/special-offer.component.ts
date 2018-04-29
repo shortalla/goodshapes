@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PriceModel } from '../../model/price/price';
+import { PRICE_DATA } from '../../data/data';
 
 @Component({
 	selector: 'gs-special-offer',
@@ -6,4 +8,6 @@ import { Component } from '@angular/core';
 	styleUrls: ['./special-offer.component.scss']
 })
 
-export class GsSpecialOfferComponent { }
+export class GsSpecialOfferComponent { 
+	private data: PriceModel = PRICE_DATA;
+}

@@ -1,6 +1,7 @@
 import { SectionDataModel } from '../model/section/section-data';
 import { ListItemModel } from '../model/list/list-item';
 import { QuoteModel } from '../model/quote/quote';
+import { PriceModel } from '../model/price/price';
 
 
 
@@ -121,3 +122,12 @@ export const QUOTES_DATA: QuoteModel[] = [
         imageUrl: 'assets/icons/gs-icon-notes.png',
     },
 ];
+
+
+
+export const PRICE_DATA: PriceModel = {
+    description: 'Full 15 week program',
+    subtext:     'only 2,80€ per week!',
+    oldPrice:    '49€',
+    price:       '39€'
+};

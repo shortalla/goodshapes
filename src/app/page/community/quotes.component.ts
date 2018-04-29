@@ -12,5 +12,5 @@ import { QuoteModel } from '../../model/quote/quote';
 * Outputs the list of quotes on the landing page.
 */
 export class GsQuotesComponent {
-	private quotesList: QuoteModel[] = QUOTES_DATA;
+	private list: QuoteModel[] = QUOTES_DATA;
 }

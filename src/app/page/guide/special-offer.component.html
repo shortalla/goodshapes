@@ -1,10 +1,10 @@
 <div class="special-offer-content layout-row layout-align-start-center">
 
     <div class="offer-box">
-        <h5>Full 15 week program</h5>
-        <div class="old-price">49€<div class="crossed-out"></div></div>
-        <div class="new-price">39€</div>
-        <div class="price-per-week">only 2,80€ per week!</div>
+        <h5>{{ data.description }}</h5>
+        <div class="old-price">{{ data.oldPrice }}<div class="crossed-out"></div></div>
+        <div class="new-price">{{ data.price }}</div>
+        <div class="price-per-week">{{ data.subtext }}</div>
         <gs-button>Order now</gs-button>
     </div>
 
