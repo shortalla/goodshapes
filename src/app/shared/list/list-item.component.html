@@ -2,11 +2,11 @@
 	<div class="item-icon">
 		<img src="{{ item.imageUrl }}" />
 	</div>
-	<div class="layout-column">
-		<h4 *ngIf="item.heading">
+	<div class="item-text layout-column">
+		<h5 *ngIf="item.heading">
 			{{ item.heading }}
-		</h4>
-		<p class="item-text">
+		</h5>
+		<p>
 			{{ item.text }}
 		</p>
 	</div>

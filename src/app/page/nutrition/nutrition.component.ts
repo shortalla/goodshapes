@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ListItemModel } from '../../model/list/list-item';
-import { NUTRITION_LIST } from '../../data/lists';
+import { SectionDataModel } from '../../model/section/section-data';
+import { NUTRITION_DATA } from '../../data/data';
 
 @Component({
 	selector: 'gs-nutrition',
@@ -9,5 +9,5 @@ import { NUTRITION_LIST } from '../../data/lists';
 })
 
 export class GsNutritionComponent {
-	private nutritionList: ListItemModel[] = NUTRITION_LIST;
+	private data: SectionDataModel = NUTRITION_DATA;
 }

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavService } from '../../shared/services/nav.service';
 import { RegisterService } from '../../shared/services/register.service';
-import { HEADER_LIST } from '../../data/lists';
-import { ListItemModel } from '../../model/list/list-item';
+import { HEADER_DATA } from '../../data/data';
+import { SectionDataModel } from '../../model/section/section-data';
 
 @Component({
 	selector: 'gs-header',
@@ -11,7 +11,7 @@ import { ListItemModel } from '../../model/list/list-item';
 })
 
 export class GsHeaderComponent {
-	private headerList: ListItemModel[] = HEADER_LIST;
+	private data: SectionDataModel = HEADER_DATA;
 
 	constructor(private navService: NavService,
 				private registerService: RegisterService) { }

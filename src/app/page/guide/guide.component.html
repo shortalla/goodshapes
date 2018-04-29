@@ -1,24 +1,18 @@
 <section class="guide-content gs-content-padding">
 
-    <h6>One Good Guide</h6>
+    <h6>{{ data.firstHeader }}</h6>
     <div class="layout-row layout-align-start-center">
 		<div class="header-box">
-			<h1>One Great You</h1>
+			<h1>{{ data.secondHeader }}</h1>
 		</div>
 	</div>
 
 	<div class="layout-gt-xs-row layout-xs-column layout-align-xs-center-center">
 		<div class="flex layout-column">
-		    <p>
-				Good Shapes is more than a diet. It's more than a lifestyle.
-				It's a commitment to finding your fiercest, most self-loving
-				and most body-positive you. Join women from around the world
-				in achieving your personal body and fitness goals with our guide
-				- no matter what shape or size.
-		    </p>
+		    <p>{{ data.text }}</p>
 		    <gs-list
 		    	class="gs-content-padding-vertical"
-		    	[list]="guideList"></gs-list>
+		    	[list]="data.list"></gs-list>
 		</div>
 
 		<div class="flex image-container">

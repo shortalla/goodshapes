@@ -1,13 +1,11 @@
 <section>
 	<div class="nutrition-upper gs-content-padding gs-text-max-width">
 		<gs-section-heading>	
-			<div lightText>It's not a diet.</div>
-			<div darkText>It's a way of life.</div>	
+			<div lightText>{{ data.firstHeader }}</div>
+			<div darkText>{{ data.secondHeader }}</div>	
 		</gs-section-heading>
 
-	    <p>
-	    	The goodshapes nutrition guide helps you to establish a healthy (and sustainable) lifestyle to achieve you fitness goals!
-	    </p>
+	    <p>{{ data.text }}</p>
 	</div>
 
 	<div class="nutrition-lower gs-content-padding layout-column layout-gt-xs-row">
@@ -16,7 +14,7 @@
 		</div>
 
 		<div class="layout-column">
-			<gs-list [list]="nutritionList"></gs-list>
+			<gs-list [list]="data.list"></gs-list>
 			<div class="gs-content-padding-vertical layout-xs-row  layout-align-xs-end-end">
 				<gs-button>Order Now</gs-button>
 			</div>

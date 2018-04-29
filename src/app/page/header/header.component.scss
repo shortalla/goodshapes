@@ -4,6 +4,7 @@ header {
 	background-color: $theme-primary;
 	padding-top: 1em;
 }
+
 .header-bg {
     background-image: url('/assets/images/gs-green-shape.png'),
     				  url('/assets/images/gs-triangle.png');
@@ -16,8 +17,11 @@ nav {
 	text-align: center;
 	padding: 0.5em 1.5em;
 	width: 100%;
-	background-color: $theme-primary;
 	z-index: 5;
+
+	&.is-sticky {
+		background-color: $theme-primary;
+	}
 
 	ul {
 		margin: 0;

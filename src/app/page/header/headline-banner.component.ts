@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SectionDataModel } from '../../model/section/section-data';
+import { HEADER_DATA } from '../../data/data';
 
 @Component({
 	selector: 'gs-headline-banner',
@@ -6,4 +8,6 @@ import { Component } from '@angular/core';
 	styleUrls: ['./headline-banner.component.scss']
 })
 
-export class GsHeadlineBannerComponent { }
+export class GsHeadlineBannerComponent { 
+	private data: SectionDataModel = HEADER_DATA;
+}

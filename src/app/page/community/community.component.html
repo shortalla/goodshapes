@@ -3,14 +3,11 @@
 	<div class="gs-content-padding gs-text-max-width">
 		
 		<gs-section-heading>
-			<div lightText>Don't do it alone.</div>
-			<div darkText>Join our community!</div>
+			<div lightText>{{ data.firstHeader }}</div>
+			<div darkText>{{ data.secondHeader }}</div>
 		</gs-section-heading>
 
-	    <p>
-		    Find support and be motivated by thousands of women
-		    around the world on your fitness journey.
-	    </p>
+	    <p>{{ data.text }}</p>
 
 	</div>
 
@@ -21,7 +18,7 @@
 </section>
 
 <section class="gs-content-padding-vertical">
-	<gs-unique-selling-points [list]="communityList"></gs-unique-selling-points>
+	<gs-unique-selling-points [list]="data.list"></gs-unique-selling-points>
 </section>
 
 <gs-quotes class="gs-content-padding"></gs-quotes>

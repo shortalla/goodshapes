@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ListItemModel } from '../../model/list/list-item';
-import { GUIDE_LIST } from '../../data/lists';
+import { SectionDataModel } from '../../model/section/section-data';
+import { GUIDE_DATA } from '../../data/data';
 
 @Component({
   selector: 'gs-guide',
@@ -9,5 +9,5 @@ import { GUIDE_LIST } from '../../data/lists';
 })
 
 export class GsGuideComponent { 
-	private guideList: ListItemModel[] = GUIDE_LIST;
+	private data: SectionDataModel = GUIDE_DATA;
 }
