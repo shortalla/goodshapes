@@ -13,11 +13,6 @@ import { GsSectionModule } from '../../shared/section/section.module';
         GsCommunityComponent,
         GsQuotesComponent,
     ],
-    providers: [],
-    bootstrap: [
-        GsCommunityComponent,
-        GsQuotesComponent,
-    ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
     ],

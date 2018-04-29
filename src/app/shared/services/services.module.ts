@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavService } from './nav.service';
+import { RegisterService } from './register.service';
 
 @NgModule({
     declarations: [],
     providers: [
         NavService,
+        RegisterService,
     ],
     bootstrap: [],
     imports: [
@@ -13,6 +15,7 @@ import { NavService } from './nav.service';
     ],
     exports: [
         NavService,
+        RegisterService,
     ]
 })
 

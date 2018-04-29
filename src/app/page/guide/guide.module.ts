@@ -12,11 +12,6 @@ import { GsButtonModule } from '../../shared/button/button.module';
         GsGuideComponent,
         GsSpecialOfferComponent,
     ],
-    providers: [],
-    bootstrap: [
-        GsGuideComponent,
-        GsSpecialOfferComponent,
-    ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
     ],

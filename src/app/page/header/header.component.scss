@@ -14,18 +14,24 @@ header {
 
 nav {
 	text-align: center;
-	padding: 1.5em;
+	padding: 0.5em 1.5em;
+	width: 100%;
+	background-color: $theme-primary;
+	z-index: 5;
 
-	ul li {
-		list-style: none;
-		margin: 0 0.4em;
-		padding: 0.25em 0;
-		border-bottom: 2px solid transparent;
-		font-size: $font-size-sm;
+	ul {
+		margin: 0;
+		li {
+			list-style: none;
+			margin: 0 0.4em;
+			padding: 0.25em 0;
+			border-bottom: 2px solid transparent;
+			font-size: $font-size-sm;
 
-		&.is-selected,
-		&:hover {
-			border-bottom-color: $theme-secondary;
+			&.is-selected,
+			&:hover {
+				border-bottom-color: $theme-secondary;
+			}
 		}
 	}
 }
@@ -64,7 +70,7 @@ img {
 		    background-color: $theme-background;
 		    overflow-x: hidden;
 		    transition: 0.5s;
-		    padding-top: 6rem;
+		    padding-top: 7rem;
 
 		    li {
 		    	border: none;
@@ -94,12 +100,8 @@ img {
 		}
 
 		gs-menu-button {
-		    transition: 0.5s;
-			position: absolute;
-			z-index: 3;
-			top: 1em;
-			right: 1em;
-		} 	
+			z-index: 10;
+		}
 	}	
 }
 

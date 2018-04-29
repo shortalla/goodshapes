@@ -1,6 +1,6 @@
 @import '~sass/styles.scss';
 
-.nutrition-bg {
+.nutrition-upper {
 	background: url('/assets/images/nutrition-shape-left.png'),
 				url('/assets/images/nutrition-right.png');
 	background-size: contain, contain;
@@ -13,9 +13,9 @@
 }
 
 
-.nutrition-points {
+.nutrition-lower {
 	background: url('/assets/images/nutrition-left.png');
-	background-size: contain;
+	background-size: 15%;
 	background-repeat: no-repeat;
 	background-position: bottom left;
 }
@@ -23,11 +23,6 @@
 .image-container {
 	max-width: 30%;
 	margin-right: 3em;
-}
-
-img {
-	max-width: 100%;
-	height-height: 100%;
 }
 
 

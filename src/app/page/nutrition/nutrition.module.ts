@@ -14,11 +14,6 @@ import { GsListModule } from '../../shared/list/list.module';
         GsNutritionComponent,
         GsVideoComponent,
     ],
-    providers: [],
-    bootstrap: [
-        GsNutritionComponent,
-        GsVideoComponent,
-    ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
     ],

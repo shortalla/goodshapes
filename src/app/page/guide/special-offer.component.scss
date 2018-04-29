@@ -70,3 +70,13 @@
 		background-position: 50% 50%;
 	}
 }
+
+@media (min-width: $layout-breakpoint-sm) {
+	.special-offer-content {
+		max-width: 80%;
+	}
+
+	.offer-box {
+		margin-left: 4em;
+	}
+}

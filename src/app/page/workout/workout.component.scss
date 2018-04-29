@@ -1,6 +1,6 @@
 @import '~sass/styles.scss';
 
-.workout-bg {
+.workout-content {
     background-image: url('/assets/images/workout-shape-left.png'),
     				  url('/assets/images/workout-shape-right.png');
     background-position: left top, right bottom;
@@ -13,9 +13,6 @@
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-}
-
-.workout-image {
 	min-width: 30%;
 	margin-right: 3rem;
 }

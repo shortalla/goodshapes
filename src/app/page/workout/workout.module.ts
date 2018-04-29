@@ -12,11 +12,6 @@ import { GsListModule } from '../../shared/list/list.module';
         GsWorkoutComponent,
         GsPhotoDividerComponent,
     ],
-    providers: [],
-    bootstrap: [
-        GsWorkoutComponent,
-        GsPhotoDividerComponent,
-    ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
     ],

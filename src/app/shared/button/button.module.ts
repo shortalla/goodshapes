@@ -14,10 +14,6 @@ import { GsMenuButtonComponent } from './menu-button.component';
     providers: [
         NavService
     ],
-    bootstrap: [
-    	GsButtonComponent,
-        GsMenuButtonComponent,
-    ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
     ],

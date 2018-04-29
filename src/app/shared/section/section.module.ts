@@ -7,10 +7,6 @@ import { GsSectionHeadingComponent } from './section-heading.component';
     declarations: [
         GsSectionHeadingComponent,
     ],
-    providers: [],
-    bootstrap: [
-    	GsSectionHeadingComponent,
-    ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
     ],

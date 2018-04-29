@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { GoTopButtonModule } from 'ng2-go-top-button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgStickyDirective } from 'ng-sticky';
 
 // Page
 import { GsHeaderModule } from './page/header/header.module';
@@ -19,7 +18,6 @@ import { AppComponent } from './app.component';
 @NgModule({
     declarations: [
         AppComponent,
-        NgStickyDirective,
     ],
     providers: [],
     bootstrap: [

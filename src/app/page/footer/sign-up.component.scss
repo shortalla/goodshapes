@@ -1,0 +1,13 @@
+@import '~sass/styles.scss';
+
+.highlight {
+	display: inline-block;
+	position: relative;
+	background: url('/assets/images/highlight-shape.png');
+	background-size: cover;
+}
+
+.image-container {
+	margin-right: 1em;
+	min-width: 20%;
+}

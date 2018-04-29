@@ -1,0 +1,17 @@
+@import '~sass/styles.scss';
+
+input {
+	border: none;
+	border-bottom: 2px solid $theme-grey;
+	margin: 0.75em 0;
+	padding: 0.75em 1em;
+	outline: none;
+
+	&:focus {
+		border-bottom-color: $theme-secondary;
+	}
+
+	&::placeholder {
+		color: $theme-grey;
+	}
+}

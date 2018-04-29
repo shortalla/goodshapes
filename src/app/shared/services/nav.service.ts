@@ -1,5 +1,4 @@
 import { Injectable, Inject } from '@angular/core';
-import { PlatformLocation } from '@angular/common';
 import { DOCUMENT } from '@angular/platform-browser';
 
 
@@ -23,29 +22,26 @@ export class NavService {
         return this._navElement;
     }
 
-    constructor(
-        @Inject(DOCUMENT) private document: any) {
-            this._isMobileNavOpen = false;
-        }
+    constructor(@Inject(DOCUMENT) private document: any) { }   
 
     /**
      * Toggle the mobile navigation menu
      */
-    toggleMobileNav(): void {
+    public toggleMobileNav(): void {
         this._isMobileNavOpen = !this._isMobileNavOpen;
     }
 
     /**
      * Open the mobile navigation menu
      */
-    openMobileNav(): void {
+    public openMobileNav(): void {
         this._isMobileNavOpen = true;
     }
 
     /**
      * Close the mobile navigation menu
      */
-    closeMobileNav(): void {
+    public closeMobileNav(): void {
         this._isMobileNavOpen = false;
     }
 }

@@ -21,21 +21,6 @@ ul {
 	}
 }
 
-.highlight {
-	display: inline-block;
-	position: relative;
-	background: url('/assets/images/highlight-shape.png');
-	background-size: cover;
-}
-
-.image-container {
-	margin: 0.5rem;
-}
-
-img {
-	margin: 0.5em;
-}
-
 
 @media (max-width: $layout-breakpoint-xs) {
 	ul {

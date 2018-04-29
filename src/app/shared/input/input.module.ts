@@ -1,16 +1,16 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { GsInputComponent } from './input.component';
+import { GsEmailInputComponent } from './email-input.component';
 
 
 @NgModule({
     declarations: [
-        GsInputComponent,
+        GsEmailInputComponent,
     ],
     providers: [],
     bootstrap: [
-    	GsInputComponent,
+    	GsEmailInputComponent,
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
@@ -19,7 +19,7 @@ import { GsInputComponent } from './input.component';
         CommonModule
     ],
     exports: [
-    	GsInputComponent,
+    	GsEmailInputComponent,
     ]
 })
 

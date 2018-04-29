@@ -14,13 +14,6 @@ import { GsUniqueSellingPointsComponent } from './unique-selling-points.componen
         GsUspItemComponent,
         GsUniqueSellingPointsComponent,
     ],
-    providers: [],
-    bootstrap: [
-        GsListItemComponent,
-        GsListComponent,
-        GsUspItemComponent,
-        GsUniqueSellingPointsComponent,
-    ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
     ],
@@ -34,5 +27,6 @@ import { GsUniqueSellingPointsComponent } from './unique-selling-points.componen
         GsUniqueSellingPointsComponent,
     ]
 })
+
 export class GsListModule { }
 
